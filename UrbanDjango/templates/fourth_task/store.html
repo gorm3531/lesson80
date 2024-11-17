@@ -1,0 +1,15 @@
+{% extends 'fourth_task/menu.html' %}
+{% block pagename %}
+<h1>Магазин</h1>
+{{ block.super }}
+{% endblock %}
+{% block content %}
+<ul>
+    {% for i in list %}
+    <li>
+        {{ i }}<button>{{ button }}</button>
+    </li>
+    <p></p>
+    {% endfor %}
+</ul>
+{% endblock %}
